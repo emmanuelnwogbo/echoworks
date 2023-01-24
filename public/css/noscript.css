@@ -32,6 +32,7 @@ html,body{
 .page-body,
 .ui-splash-in{
 	opacity: 1 !important;
+	display: none !important;
 }
 
 .site-nav-a *,
@@ -61,7 +62,7 @@ HOME
 ==============================================
 */
 .page-title { text-transform: uppercase; }
-.page-title-move .page-title { overflow: hidden; position: relative; }
+.page-title-move .page-title { overflow: hidden; position: relative; display: none !important; }
 .site-content[data-type="home"] .site-body { display: none; }
 .page-title-in .title-wrap { word-break: keep-all; }
 .page-title-in { display: block; padding: 0 !important; height: auto; line-height: 1; text-align: center; position: relative; }
@@ -216,6 +217,20 @@ MOBILE
 	/* WORKS */
 	.works-ul { padding: 10vh 0; }
 	.section.works-wrap .works-li { height: 20vh; }
+}
+
+.page-title-move-wrap .page-title-wrap {
+	opacity: 0 !important; /*emmanuel*/
+}
+
+.page-title-move-wrap .page-title-wrap .page-title-move-wrap-ghost {
+	opacity: 0 !important; /*emmanuel*/
+}
+
+.emmanuel-style {
+	position: absolute;
+	opacity: 0 !important; /*emmanuel*/
+	z-index: -1;
 }
 
 
