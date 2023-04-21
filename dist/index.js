@@ -13,6 +13,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 require("dotenv").config();
 var app = (0, _express["default"])();
 app.use(_express["default"]["static"]('public'));
+app.use(_express["default"]["static"]('_app'));
 app.use(_express["default"].urlencoded({
   extended: false
 }));
@@ -25,6 +26,9 @@ var PORT = process.env.PORT || 8080;
 var server = _http["default"].createServer(app);
 app.get('/', function (req, res) {
   res.sendFile(_path["default"].join(__dirname, '../public/index.html'));
+});
+app.get('/brand', function (req, res) {
+  res.sendFile(_path["default"].join(__dirname, '../public/html/work.html'));
 });
 server.listen(PORT, /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(error) {

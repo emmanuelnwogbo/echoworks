@@ -8,6 +8,7 @@ import path from 'path';
 const app = express();
 
 app.use(express.static('public'));
+app.use(express.static('_app'));
 
 app.use(express.urlencoded({
   extended: false
@@ -22,6 +23,10 @@ const server = http.createServer(app);
 
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '../public/index.html'));
+});
+
+app.get('/brand', function(req, res) {
+  res.sendFile(path.join(__dirname, '../public/html/work.html'));
 });
 
 server.listen(PORT, async (error) => {
