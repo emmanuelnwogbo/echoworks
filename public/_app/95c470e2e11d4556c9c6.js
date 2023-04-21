@@ -10,7 +10,8 @@ if (window.screen.width >= 768) {
             console.log(this)
             //embedhtml.style.display = 'block';
 
-            navigateTo('http://localhost:8080/brand');
+            //navigateTo('http://localhost:8080/brand');
+            navigateTo('https://echoworks.herokuapp.com/brand');
         });     
     });
 
