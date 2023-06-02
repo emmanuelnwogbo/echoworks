@@ -60,3 +60,28 @@ slideincre.addEventListener('click', function(event) {
     children[current_slide].style.opacity = '1';
     children[current_slide-1].style.opacity = '.5';
 });
+
+const mobileSwipe = document.querySelector('.brandcontainer__mobileswipe');
+let startX;
+let scrollLeft;
+
+mobileSwipe.addEventListener('touchstart', (e) => {
+    startX = e.touches[0].clientX;
+    scrollLeft = mobileSwipe.scrollLeft;
+});
+
+mobileSwipe.addEventListener('touchmove', (e) => {
+  if (!startX) return;
+
+  e.preventDefault();
+
+  const x = e.touches[0].clientX;
+  const walk = (x - startX) * 2; // Adjust the sensitivity of the swipe
+
+  mobileSwipe.scrollLeft = scrollLeft - walk;
+});
+
+mobileSwipe.addEventListener('touchend', () => {
+  startX = null;
+});
+  

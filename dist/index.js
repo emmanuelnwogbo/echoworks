@@ -22,13 +22,32 @@ app.use(_bodyParser["default"].json());
 app.use(_bodyParser["default"].urlencoded({
   extended: true
 }));
+app.use('/images', _express["default"]["static"]('images'));
 var PORT = process.env.PORT || 8080;
 var server = _http["default"].createServer(app);
 app.get('/', function (req, res) {
   res.sendFile(_path["default"].join(__dirname, '../public/index.html'));
 });
 app.get('/brand', function (req, res) {
-  res.sendFile(_path["default"].join(__dirname, '../public/html/work.html'));
+  res.sendFile(_path["default"].join(__dirname, '../public/html/moneypigeon.html'));
+});
+app.get('/moneypigeon', function (req, res) {
+  res.sendFile(_path["default"].join(__dirname, '../public/html/moneypigeon.html'));
+});
+app.get('/oraimo', function (req, res) {
+  res.sendFile(_path["default"].join(__dirname, '../public/html/oraimo.html'));
+});
+app.get('/oraimowaye', function (req, res) {
+  res.sendFile(_path["default"].join(__dirname, '../public/html/oraimowaye.html'));
+});
+app.get('/pernodricard', function (req, res) {
+  res.sendFile(_path["default"].join(__dirname, '../public/html/pernodricard.html'));
+});
+app.get('/images/:imageName', function (req, res) {
+  var imageName = req.params.imageName;
+  var imagePath = _path["default"].join(__dirname, 'webp', imageName);
+  console.log(imageName, imagePath);
+  res.sendFile(imagePath);
 });
 server.listen(PORT, /*#__PURE__*/function () {
   var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(error) {

@@ -1,36 +1,32 @@
-if (window.screen.width >= 768) {
-    const xhrem = new XMLHttpRequest();
+const url = `http://localhost:3000`;
 
-    const titlesElems = document.querySelectorAll('.page-title');
-    console.log(titlesElems);
+const xhrem = new XMLHttpRequest();
 
-    titlesElems.forEach(function(element) {
-        element.addEventListener('click', function() {
-            const embedhtml = document.getElementById('embed-html');
-            console.log(this)
-            //embedhtml.style.display = 'block';
+const titlesElems = document.querySelectorAll('.page-title');
+console.log(titlesElems);
 
-            //navigateTo('http://localhost:8080/brand');
-            navigateTo('https://echoworks.herokuapp.com/brand');
-        });     
-    });
+titlesElems.forEach(function(element) {
+    element.addEventListener('click', function() {
+        //const embedhtml = document.getElementById('embed-html');
 
-    function navigateTo(url) {
-        // Change the URL of the current page
-        window.location.href = url;
-      }
-  
-
-    /*xhrem.onreadystatechange = function() {
-        if (xhrem.readyState === 4 && xhrem.status === 200) {
-            const htmlContent = xhrem.responseText;
-            const pageContent = document.querySelector('.page-content');
-
-            pageContent.insertAdjacentHTML('beforebegin', htmlContent);
-            console.log('ready', htmlContent, pageContent);
+        if (this.innerText === 'MONEY PIGEON') {
+            navigateTo(`/moneypigeon`);
         }
-    }
 
-    xhrem.open('GET', '../html/work.html', true);
-    xhrem.send();*/
-  }
+        if (this.innerText === 'ORAIMO OPEN AUDIO') {
+            navigateTo(`/oraimo`);
+        }
+
+        if (this.innerText === 'ORAIMO WAYE') {
+            navigateTo(`/oraimowaye`);
+        }
+
+        if (this.innerText === 'PERNOD RICARD') {
+            navigateTo(`/pernodricard`);
+        }
+      });     
+  });
+
+function navigateTo(url) {
+    window.location.href = url;
+}

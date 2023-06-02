@@ -17,6 +17,7 @@ app.use(express.urlencoded({
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
+app.use('/images', express.static('images'));
 
 const PORT = process.env.PORT || 8080;
 const server = http.createServer(app);
@@ -26,8 +27,33 @@ app.get('/', function(req, res) {
 });
 
 app.get('/brand', function(req, res) {
-  res.sendFile(path.join(__dirname, '../public/html/work.html'));
+  res.sendFile(path.join(__dirname, '../public/html/moneypigeon.html'));
 });
+
+app.get('/moneypigeon', function(req, res) {
+  res.sendFile(path.join(__dirname, '../public/html/moneypigeon.html'));
+});
+
+app.get('/oraimo', function(req, res) {
+  res.sendFile(path.join(__dirname, '../public/html/oraimo.html'));
+});
+
+app.get('/oraimowaye', function(req, res) {
+  res.sendFile(path.join(__dirname, '../public/html/oraimowaye.html'));
+});
+
+app.get('/pernodricard', function(req, res) {
+  res.sendFile(path.join(__dirname, '../public/html/pernodricard.html'));
+});
+
+app.get('/images/:imageName', function(req, res) {
+  const imageName = req.params.imageName;
+  const imagePath = path.join(__dirname, 'webp', imageName);
+
+  console.log(imageName, imagePath)
+
+  res.sendFile(imagePath);
+})
 
 server.listen(PORT, async (error) => {
     if (error) {
