@@ -98,22 +98,22 @@ const header = `
         </div>
         <div class="embedheader__right">
             <span>
-                <a href="https://example.com">How We Think</a>
+                <a href="${url}">How We Think</a>
             </span>
             <span>
-                <a>Competencies</a>
+                <a href="${url}">Competencies</a>
             </span>
             <span>
-                <a>Who We Are</a>
+                <a href="${url}">Who We Are</a>
             </span>
             <span>
-                <a>Our Works</a>
+                <a href="/">Our Works</a>
             </span>
             <span>
-                <a>Billboards</a>
+                <a href="https://billboards.echoafrica.co/">Billboards</a>
             </span>
             <span>
-                <a>Say Hello</a>
+                <a href="${url}">Say Hello</a>
             </span>
         </div>
         <div class="embedheader__burger" id="embedheader__burger">
