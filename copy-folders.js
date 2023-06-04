@@ -15,3 +15,5 @@ foldersToCopy.forEach((folder) => {
 });
 
 console.log('Folders copied to the dist directory.');
+
+//git commit -m 'refactor loader and scroller'

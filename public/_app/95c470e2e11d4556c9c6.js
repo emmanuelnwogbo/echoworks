@@ -25,8 +25,42 @@ titlesElems.forEach(function(element) {
             navigateTo(`/pernodricard`);
         }
       });     
-  });
+});
 
 function navigateTo(url) {
     window.location.href = url;
 }
+
+const header = `
+    <div class="embedheader" id="embedheader">
+        <div class="embedheader__left">
+            <a href="${url}">
+                <figure class="embedheader__logo">
+                    <img src="https://rebel-sam.s3.eu-west-2.amazonaws.com/logo.svg"/>
+                </figure>
+            </a>
+        </div>
+        <div class="embedheader__right">
+            <span>
+                <a href="${url}">How We Think</a>
+            </span>
+            <span>
+                <a href="${url}">Competencies</a>
+            </span>
+            <span>
+                <a href="${url}">Who We Are</a>
+            </span>
+            <span>
+                <a>Our Works</a>
+            </span>
+            <span>
+                <a href="https://billboards.echoafrica.co/">Billboards</a>
+            </span>
+            <span>
+                <a href="${url}">Say Hello</a>
+            </span>
+        </div>
+    </div>
+`;
+
+document.body.insertAdjacentHTML("beforeend", header);
