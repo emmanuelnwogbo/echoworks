@@ -32,6 +32,8 @@ if (window.screen.width < 768) {
 
 document.addEventListener('DOMContentLoaded', function() {
     document.body.classList.add('page-loaded');
+
+    console.log('page loaded here')
 });
 
 let current_slide = 0;
@@ -43,7 +45,7 @@ const children = brandcontainer__slidenav.children;
 const brandcontainer__slidewrapper = document.querySelector('.brandcontainer__slidewrapper');
 const childrenImgs = brandcontainer__slidewrapper.children;
 
-const url = `https://echoafrica.co/`;
+const url = `https://echoafrica.co`;
 
 children[current_slide].style.opacity = '1';
 childrenImgs[current_slide].style.opacity = '1';
