@@ -46,7 +46,9 @@ app.get('/pernodricard', function (req, res) {
 app.get('/images/:imageName', function (req, res) {
   var imageName = req.params.imageName;
   var imagePath = _path["default"].join(__dirname, 'webp', imageName);
-  console.log(imageName, imagePath);
+
+  // console.log(imageName, imagePath)
+
   res.sendFile(imagePath);
 });
 server.listen(PORT, /*#__PURE__*/function () {

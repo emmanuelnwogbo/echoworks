@@ -50,7 +50,7 @@ app.get('/images/:imageName', function(req, res) {
   const imageName = req.params.imageName;
   const imagePath = path.join(__dirname, 'webp', imageName);
 
-  console.log(imageName, imagePath)
+ // console.log(imageName, imagePath)
 
   res.sendFile(imagePath);
 })

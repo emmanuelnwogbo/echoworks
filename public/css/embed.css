@@ -4,6 +4,10 @@ body {
   padding: 0;
 }
 
+body {
+  display: none;
+}
+
 html {
   font-size: 20px;
   font-family: 'Inter', sans-serif;
@@ -475,3 +479,7 @@ img {
     flex-direction: column;
    }
  }
+
+.page-loaded {
+  display: block;
+}

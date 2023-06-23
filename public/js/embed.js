@@ -30,6 +30,10 @@ if (window.screen.width < 768) {
     xhremM.send();
   }*/
 
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.classList.add('page-loaded');
+});
+
 let current_slide = 0;
 const slideredu = document.getElementById('slideredu');
 const slideincre = document.getElementById('slideincre');
@@ -39,7 +43,7 @@ const children = brandcontainer__slidenav.children;
 const brandcontainer__slidewrapper = document.querySelector('.brandcontainer__slidewrapper');
 const childrenImgs = brandcontainer__slidewrapper.children;
 
-const url = `http://localhost:3000`;
+const url = `https://echoafrica.co/`;
 
 children[current_slide].style.opacity = '1';
 childrenImgs[current_slide].style.opacity = '1';
@@ -127,7 +131,7 @@ const header = `
                     <a href="${url}">How We Think</a>
                 </span>
                 <span>
-                    <a href="${url}">Competencies</a>
+                    <a href="${url}">Competencies</a> 
                 </span>
                 <span>
                     <a href="${url}/#whowearemobile__copy">Who We Are</a>
