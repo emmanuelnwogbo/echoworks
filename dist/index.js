@@ -23,6 +23,10 @@ app.use(_bodyParser["default"].urlencoded({
   extended: true
 }));
 app.use('/images', _express["default"]["static"]('images'));
+app.use(_express["default"]["static"](_path["default"].join(__dirname, '../public/ui')));
+//app.use(express.static('uploads'));
+//const staticPath = path.join(__dirname, '../public/ui');
+
 var PORT = process.env.PORT || 8080;
 var server = _http["default"].createServer(app);
 app.get('/', function (req, res) {

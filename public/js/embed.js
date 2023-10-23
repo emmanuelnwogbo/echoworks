@@ -66,7 +66,7 @@ const header = `
         <div class="embedheader__left">
             <a href="${url}">
                 <figure class="embedheader__logo">
-                    <img src="https://rebel-sam.s3.eu-west-2.amazonaws.com/logo.svg"/>
+                    <img src="/logo.svg"/>
                 </figure>
             </a>
         </div>
