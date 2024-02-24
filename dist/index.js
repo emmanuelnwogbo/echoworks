@@ -29,7 +29,7 @@ app.use(_express["default"]["static"](_path["default"].join(__dirname, '../publi
 
 var PORT = process.env.PORT || 8080;
 var server = _http["default"].createServer(app);
-app.get('/', function (req, res) {
+app.get('/our-works', function (req, res) {
   res.sendFile(_path["default"].join(__dirname, '../public/index.html'));
 });
 app.get('/brand', function (req, res) {
