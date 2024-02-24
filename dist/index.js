@@ -24,6 +24,7 @@ app.use(_bodyParser["default"].urlencoded({
 }));
 app.use('/images', _express["default"]["static"]('images'));
 app.use(_express["default"]["static"](_path["default"].join(__dirname, '../public/ui')));
+app.use(_express["default"]["static"]('public'));
 //app.use(express.static('uploads'));
 //const staticPath = path.join(__dirname, '../public/ui');
 
