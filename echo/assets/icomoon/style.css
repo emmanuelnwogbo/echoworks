@@ -1,0 +1,60 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-library {
+  width: 1.0625em;
+}
+
+.icon-users1 {
+  width: 1.125em;
+}
+
+.icon-phone2 {
+  width: 0.59375em;
+}
+
+.icon-tablet1 {
+  width: 0.78125em;
+}
+
+.icon-wallet1 {
+  width: 1.1875em;
+}
+
+.icon-wallet2 {
+  width: 1.1875em;
+}
+
+.icon-newspaper {
+  width: 1.3125em;
+}
+
+.icon-envelope {
+  width: 1.1875em;
+}
+
+.icon-drivers-license-o {
+  width: 1.142578125em;
+}
+
+.icon-credit-card-alt {
+  width: 1.2861328125em;
+}
+
+.icon-calculator1 {
+  width: 0.9287109375em;
+}

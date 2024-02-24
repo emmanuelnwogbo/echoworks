@@ -1,0 +1,13 @@
+$header-pink: rgba(241, 106, 131, 1);
+$white: #fff;
+$jumbotron-black: rgba(0, 0, 0, 1);
+$white2: rgba(255, 255, 255, 1);
+$footerblack: #000;
+$whitelogoarea: #D9D9D9;
+
+
+@function scaleValue($value) {
+    @return calc(
+        #{$value} * (clamp(350px, 100vw, 3840px) / var(--ideal-viewport-width))
+    );
+}

@@ -1,0 +1,59 @@
+{
+  "Brands": {
+    "description": "Auto imported from components/Brands.vue"
+  },
+  "Competencies": {
+    "description": "Auto imported from components/Competencies.vue"
+  },
+  "CompetenciesMobile": {
+    "description": "Auto imported from components/CompetenciesMobile.vue"
+  },
+  "DropDown": {
+    "description": "Auto imported from components/DropDown.vue"
+  },
+  "EchoFooter": {
+    "description": "Auto imported from components/EchoFooter.vue"
+  },
+  "Footer": {
+    "description": "Auto imported from components/Footer.vue"
+  },
+  "Header": {
+    "description": "Auto imported from components/Header.vue"
+  },
+  "HoverCompImg": {
+    "description": "Auto imported from components/HoverCompImg.vue"
+  },
+  "Jumbotron": {
+    "description": "Auto imported from components/Jumbotron.vue"
+  },
+  "JumbotronMobile": {
+    "description": "Auto imported from components/JumbotronMobile.vue"
+  },
+  "Mobile": {
+    "description": "Auto imported from components/Mobile.vue"
+  },
+  "MobileRipplePhoto": {
+    "description": "Auto imported from components/MobileRipplePhoto.vue"
+  },
+  "Solutions": {
+    "description": "Auto imported from components/Solutions.vue"
+  },
+  "SolutionsMobile": {
+    "description": "Auto imported from components/SolutionsMobile.vue"
+  },
+  "Spiral": {
+    "description": "Auto imported from components/Spiral.vue"
+  },
+  "Tutorial": {
+    "description": "Auto imported from components/Tutorial.vue"
+  },
+  "WhoWeAre": {
+    "description": "Auto imported from components/WhoWeAre.vue"
+  },
+  "WhoWeAreMobile": {
+    "description": "Auto imported from components/WhoWeAreMobile.vue"
+  },
+  "Works": {
+    "description": "Auto imported from components/Works.vue"
+  }
+}

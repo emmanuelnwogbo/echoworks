@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap);
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: 'Inter', sans-serif;
+  overflow: hidden;
+}
+
+.wrapper {
+  width: 300%;
+  height: 100%;
+  /*display: flex;
+  flex-wrap: nowrap;*/
+}
+
+.logo {
+  font-size: 8rem;
+  position: fixed;
+  z-index: 10;
+  top: 15%;
+  left: 4rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+.line {
+  background-color: red;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+}
+
+section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+section.character::before {
+  content: '';
+  width: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.block {
+  width: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+.saitama::before, .saitama .block {
+  background-color: #ffc107;
+}
+
+.genos::before, .genos .block {
+  background-color: #83cdc1
+}
+
+.caption {
+  position: absolute;
+  bottom: 4rem;
+  left: 4rem;
+  width: 30%;
+  font-weight: 400;
+  color: #444;
+  font-family: monospace;
+  transform: translateY(100%)
+}
+
+.character img {
+  position: relative;
+  z-index: 10;
+  height: 90vh;
+  width: auto;
+  transform: translateY(-100%)
+}
+
+.huge-text {
+  font-size: 25rem;
+  width: 100%;
+  text-align: center;
+  color: #f52b2b;
+  position: absolute;
+  top: 20%;
+  left: 0;
+  transform: translateY(100%);
+}
+
+.nickname {
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
+  font-size: 3rem;
+  text-align: right;
+  transform: translateY(-200%)
+}
+
+.nickname span {
+  display: block;
+  font-size: 70%;
+  color: #fff;
+}
+
+.quote {
+  position: absolute;
+  bottom: 4rem;
+  right: 4rem;
+  font-size: 3rem;
+  width: 30%;
+  text-align: right;
+  transform: translateY(200%)
+}
+
+.quote::before, .quote::after {
+  content: '';
+  color: #fff;
+}
+    </style>
+</head>
+<body>
+    <div class=logo>
+        <h1>one<br/>punch<br/>man</h1>
+    </div>
+      
+    <div class="wrapper">
+        <section class="intro">
+          <div class="line"></div>
+        </section>
+        
+        <section class="saitama character">
+          <div class="block"></div>
+          <img src="https://www.actionfiguresitalia.it/107545-large_default/one-punch-man-pop-up-parade-pvc-statue-saitama-oppai-hoodie-ver-17-cm.jpg"/><span class="huge-text">Saitama</span>
+          <div class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat ipsum vitae nisl dapibus, id dapibus nunc eleifend. Cras         quis metus euismod, euismod arcu non, vestibulum mi. Ut dignissim feugiat mauris, ut lobortis nisi ullamcorper ac. Pellentesque             habitant morbi tristique senectus et netus et malesuada fames acturpis egestas. Nulla facilisi. Mauris tincidunt lorem eget finibus       auctor. Nulla facilisi. Curabitur pharetra lacus ut nisl rutrum, id aliquet ante lobortis.
+          </div>
+          <div class="nickname"><span>Bald cape</span></div>
+          <div class="quote">
+            I'll leave tomorrow's problems to tomorrow's me
+          </div>
+        </section>
+        
+        
+        <section class="genos character">
+          <div class="block"></div>
+          <img src="https://www.previewsworld.com/SiteImage/MainImage/STL159064.jpg"/><span class="huge-text">Genos</span>
+          <div class="caption">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce volutpat ipsum vitae nisl dapibus, id dapibus nunc eleifend. Cras         quis metus euismod, euismod arcu non, vestibulum mi. Ut dignissim feugiat mauris, ut lobortis nisi ullamcorper ac. Pellentesque             habitant morbi tristique senectus et netus et malesuada fames acturpis egestas. Nulla facilisi. Mauris tincidunt lorem eget finibus       auctor. Nulla facilisi. Curabitur pharetra lacus ut nisl rutrum, idaliquet ante lobortis.
+          </div>
+          <div class="nickname"><span>Demon Cyborg</span></div>
+          <div class="quote">
+            I won't grow if I don't face stronger opponents
+          </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        document.addEventListener('DOMContentLoaded', () => {
+  
+            const sections = gsap.utils.toArray('section');
+  
+            let scrollTween = gsap.to(sections, {
+                yPercent: -200 * (sections.length - 1) / sections.length,
+                ease: 'none',
+               scrollTrigger: {
+                    trigger: '.wrapper',
+                    pin: true,
+                    scrub: 0.5,
+                    snap: 1 / (sections.length - 1),
+                    start: 'top top',
+                    end: 6000,
+                }
+            });
+        });
+    </script>
+</body>
+</html>

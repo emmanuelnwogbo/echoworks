@@ -1,0 +1,58 @@
+[
+  {
+    "name": "bookaboard",
+    "path": "/bookaboard",
+    "component": "/Users/emmanuelnwogbo/work/code/Work/echoworksv2/echo/pages/bookaboard.vue",
+    "chunkName": "pages/bookaboard",
+    "_name": "_87aac27c"
+  },
+  {
+    "name": "competencies",
+    "path": "/competencies",
+    "component": "/Users/emmanuelnwogbo/work/code/Work/echoworksv2/echo/pages/competencies.vue",
+    "chunkName": "pages/competencies",
+    "_name": "_05b7932f"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "/Users/emmanuelnwogbo/work/code/Work/echoworksv2/echo/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_c0e6c748"
+  },
+  {
+    "name": "howwethink",
+    "path": "/howwethink",
+    "component": "/Users/emmanuelnwogbo/work/code/Work/echoworksv2/echo/pages/howwethink.vue",
+    "chunkName": "pages/howwethink",
+    "_name": "_47315908"
+  },
+  {
+    "name": "indexold",
+    "path": "/indexold",
+    "component": "/Users/emmanuelnwogbo/work/code/Work/echoworksv2/echo/pages/indexold.vue",
+    "chunkName": "pages/indexold",
+    "_name": "_75a27b09"
+  },
+  {
+    "name": "ourworksmob",
+    "path": "/ourworksmob",
+    "component": "/Users/emmanuelnwogbo/work/code/Work/echoworksv2/echo/pages/ourworksmob.vue",
+    "chunkName": "pages/ourworksmob",
+    "_name": "_3f3ba8c6"
+  },
+  {
+    "name": "works",
+    "path": "/works",
+    "component": "/Users/emmanuelnwogbo/work/code/Work/echoworksv2/echo/pages/works.vue",
+    "chunkName": "pages/works",
+    "_name": "_6f292bbe"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "/Users/emmanuelnwogbo/work/code/Work/echoworksv2/echo/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_0607dde4"
+  }
+]
