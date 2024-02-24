@@ -14,8 +14,8 @@ services:
     container_name: echoworks
     restart: always
     build: ./
-    environment:
-      - PORT=8001
+    ports:
+      - "8080:8080"
 
   echo:
     build: ./echo
