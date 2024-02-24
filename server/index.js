@@ -19,8 +19,9 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use('/images', express.static('images'));
 
-app.use(express.static(path.join(__dirname, '../public/ui')));
-app.use(express.static('public'));
+//app.use(express.static(path.join(__dirname, '../public/ui')));
+//app.use(express.static('public'));
+app.use('/', express.static(path.join(__dirname, 'public')));
 //app.use(express.static('uploads'));
 //const staticPath = path.join(__dirname, '../public/ui');
 
