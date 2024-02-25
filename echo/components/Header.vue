@@ -20,7 +20,7 @@
                     <a href="#whoweare">Who we are</a>
                 </div>
                 <div class="header__menuitem">
-                    <a href="https://echoafrica.co/our-works">Our works</a>
+                    <a href="https://works.echoafrica.co/">Our works</a>
                 </div>
                 <div class="header__menuitem" @click="open_link('https://billboards.echoafrica.co/')">
                     <div class="header__menuitem--item">Billboards</div>
