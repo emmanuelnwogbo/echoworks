@@ -9,6 +9,7 @@ const app = express();
 
 app.use(express.static('public'));
 app.use(express.static('_app'));
+app.use(express.static('js'));
 
 app.use(express.urlencoded({
   extended: false
@@ -21,7 +22,7 @@ app.use('/images', express.static('images'));
 
 //app.use(express.static(path.join(__dirname, '../public/ui')));
 //app.use(express.static('public'));
-app.use('/', express.static(path.join(__dirname, 'public')));
+//app.use('/', express.static(path.join(__dirname, 'public')));
 //app.use(express.static('uploads'));
 //const staticPath = path.join(__dirname, '../public/ui');
 
