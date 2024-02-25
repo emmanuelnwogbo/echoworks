@@ -1,7 +1,7 @@
 export default {
     data() {
         return {
-            url: `https://echoworks.herokuapp.com`
+            url: `https://works.echoafrica.co`
         }
     },
     computed: {
