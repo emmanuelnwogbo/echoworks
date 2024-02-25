@@ -8,8 +8,9 @@ import path from 'path';
 const app = express();
 
 app.use(express.static('public'));
-app.use(express.static('_app'));
-app.use(express.static('js'));
+
+app.use('/js', express.static(path.join(__dirname, 'public/js')));
+app.use('/_app', express.static(path.join(__dirname, 'public/_app')));
 
 app.use(express.urlencoded({
   extended: false

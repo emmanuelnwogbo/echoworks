@@ -13,8 +13,8 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 require("dotenv").config();
 var app = (0, _express["default"])();
 app.use(_express["default"]["static"]('public'));
-app.use(_express["default"]["static"]('_app'));
-app.use(_express["default"]["static"]('js'));
+app.use('/js', _express["default"]["static"](_path["default"].join(__dirname, 'public/js')));
+app.use('/_app', _express["default"]["static"](_path["default"].join(__dirname, 'public/_app')));
 app.use(_express["default"].urlencoded({
   extended: false
 }));
