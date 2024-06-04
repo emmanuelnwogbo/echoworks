@@ -35,21 +35,21 @@
                     </div>
 
                     <div class="footer__socialitems">
-                        <figure class="footer__socialitems--svg" @click="open_link('https://www.linkedin.com/company/echoafrica/')">
+                        <a class="footer__socialitems--svg" target="_blank" href="https://www.linkedin.com/company/echoafrica/">
                             <svg class="linkedin">
                                 <use xlink:href="@/assets/imgs/sprite.svg#icon-linkedin"/>
                             </svg>
-                        </figure>
-                        <figure class="footer__socialitems--svg" @click="open_link('https://instagram.com/echoafrica.co?igshid=Zjc2ZTc4Nzk=')">
+                        </a>
+                        <a class="footer__socialitems--svg" target="_blank" href="https://instagram.com/echoafrica.co?igshid=Zjc2ZTc4Nzk=">
                             <svg class="instagram">
                                 <use xlink:href="@/assets/imgs/sprite.svg#icon-instagram"/>
                             </svg>
-                        </figure>
-                        <figure class="footer__socialitems--svg" @click="open_link('')">
+                        </a>
+                        <a class="footer__socialitems--svg" target="_blank" href="https://m.facebook.com/echoafricaa.co?locale=hi_IN">
                             <svg class="facebook">
                                 <use xlink:href="@/assets/imgs/sprite.svg#icon-facebook"/>
                             </svg>
-                        </figure>
+                        </a>
                     </div>
                 </div>
 
